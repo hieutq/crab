@@ -29,10 +29,10 @@ class HomeController extends Controller
 
     public function members()
     {
-        $users = User::all();
+        $members = User::all();
 
         return view('members.index')->with([
-            'users' => $users
+            'users' => $members
         ]);
     }
 }
